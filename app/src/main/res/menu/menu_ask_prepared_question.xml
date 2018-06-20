@@ -4,6 +4,4 @@
     tools:context="com.kuhrusty.autodad.AskPreparedQuestionActivity">
     <item android:id="@+id/action_soundboard" android:title="@string/action_soundboard"
         android:orderInCategory="90" app:showAsAction="never" />
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
 </menu>
