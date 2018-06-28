@@ -1,6 +1,7 @@
 package com.kuhrusty.autodad;
 
 import android.content.res.Resources;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -31,6 +32,8 @@ public class SoundBoardActivity extends ActionBarActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
         if (savedInstanceState != null) {
 //            //  Do we have a list of questions?
