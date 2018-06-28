@@ -3,8 +3,8 @@ package com.kuhrusty.autodad;
 import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;
 
-import com.kuhrusty.autodad.MainActivity.AnswerValue;
 import com.kuhrusty.autodad.data.Question;
+import com.kuhrusty.autodad.data.Question.AnswerValue;
 
 /**
  * Created by rusty on 1/6/15.

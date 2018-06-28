@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.kuhrusty.autodad.data.Question;
-import com.kuhrusty.autodad.MainActivity.AnswerValue;
+import com.kuhrusty.autodad.data.Question.AnswerValue;
 
 import java.util.ArrayList;
 

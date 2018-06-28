@@ -3,7 +3,6 @@ package com.kuhrusty.autodad;
 import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;
 
-import com.kuhrusty.autodad.MainActivity.AnswerValue;
 import com.kuhrusty.autodad.data.Question;
 
 //import org.junit.Ignore;

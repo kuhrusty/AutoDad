@@ -3,8 +3,6 @@ package com.kuhrusty.autodad.data;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.kuhrusty.autodad.MainActivity.AnswerValue;
-
 /**
  * Created by rusty on 1/6/15.
  */

@@ -3,8 +3,8 @@ package com.kuhrusty.autodad;
 import android.app.Application;
 import android.os.Parcel;
 import android.test.ApplicationTestCase;
-import com.kuhrusty.autodad.MainActivity.AnswerValue;
 import com.kuhrusty.autodad.data.Question;
+import com.kuhrusty.autodad.data.Question.AnswerValue;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>

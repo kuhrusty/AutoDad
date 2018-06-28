@@ -3,8 +3,6 @@ package com.kuhrusty.autodad.data;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.kuhrusty.autodad.MainActivity.AnswerValue;
-
 /**
  * Created by rusty on 1/6/15.
  */
@@ -13,6 +11,12 @@ public class Question implements Parcelable {
     private AnswerValue answer = AnswerValue.NO;
     //  null unless this is AnswerValue.CUSTOM
     private String answerMsg;
+
+    public enum AnswerValue {
+        NO,
+        YES,
+        CUSTOM;
+    }
 
     public Question() {
     }
