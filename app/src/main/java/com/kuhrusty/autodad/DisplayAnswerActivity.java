@@ -2,6 +2,7 @@ package com.kuhrusty.autodad;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -30,6 +31,8 @@ public class DisplayAnswerActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
 //        setContentView(R.layout.activity_display_answer);
 
         Resources res = getResources();
