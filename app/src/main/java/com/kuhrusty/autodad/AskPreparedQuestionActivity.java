@@ -1,11 +1,9 @@
 package com.kuhrusty.autodad;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.AudioManager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -51,7 +49,6 @@ public class AskPreparedQuestionActivity extends ActionBarActivity {
         }
         setContentView(R.layout.activity_ask_prepared_question);
         View cv = findViewById(R.id.linear_question_layout);
-//Log.d("foo", "got cv " + cv);
         ViewGroup cvg = (cv instanceof ViewGroup) ? (ViewGroup)cv : null;
         for (Question tq : ql) {
             Button tb = new Button(this);
@@ -64,7 +61,6 @@ public class AskPreparedQuestionActivity extends ActionBarActivity {
 
     private ArrayList<Question> loadQuestions() {
         ArrayList<Question> rv = null;
-//if (true) throw new RuntimeException("NOT_DONE load questions");
         rv = new ArrayList<Question>();
         rv.add(new Question("id1", "Can I do something fun?", AnswerValue.NO, null));
         rv.add(new Question("id2", "Can I hang out with my friends?", AnswerValue.NO, null));
@@ -73,7 +69,6 @@ public class AskPreparedQuestionActivity extends ActionBarActivity {
         rv.add(new Question("id5", "Can I work on homework?", AnswerValue.YES, null));
         return rv;
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -91,11 +86,6 @@ public class AskPreparedQuestionActivity extends ActionBarActivity {
 
         if (id == R.id.action_soundboard) {
             Intent intent = new Intent(this, SoundBoardActivity.class);
-//Intent intent = new Intent(this, SoundBoardActivity.class);
-
-//    EditText editText = (EditText) findViewById(R.id.edit_message);
-//    String message = editText.getText().toString();
-//    intent.putExtra(EXTRA_MESSAGE, message);
             startActivity(intent);
         }
 
@@ -104,10 +94,7 @@ public class AskPreparedQuestionActivity extends ActionBarActivity {
 
     private void questionAsked(Question question) {
         Intent intent = new Intent(this, DisplayAnswerActivity.class);
-//        EditText editText = (EditText) findViewById(R.id.edit_message);
-//        String message = editText.getText().toString();
         intent.putExtra(DisplayAnswerActivity.INTENT_QUESTION, question);
         startActivity(intent);
     }
-
 }

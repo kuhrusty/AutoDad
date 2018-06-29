@@ -62,14 +62,7 @@ public class Question implements Parcelable {
      * May be null, even if getAnswer() is CUSTOM.
      */
     public String getAnswerMessage() {
-        if (answerMsg != null) {
-            return answerMsg;
-        } else if (answer == AnswerValue.NO) {
-//            return R.string.
-        }
-return answer.name();
-//return null;
-//        return answer == AnswerValue.CUSTOM ? answerMsg : null;
+        return (answerMsg != null) ? answerMsg : answer.name();
     }
 
     //  Parcelable
@@ -78,18 +71,12 @@ return answer.name();
         return 0;
     }
 
-public static boolean hose = false;
-
     //  Parcelable
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-if (hose) throw new RuntimeException("writing string " + answer.name());
         dest.writeString(questionMsg);
         dest.writeString(answer.name());
-        if ((answerMsg != null) && answer.equals(AnswerValue.CUSTOM)) {
-if (hose) throw new RuntimeException("writing string " + answerMsg);
-            dest.writeString(answerMsg);
-        }
+        dest.writeString(answerMsg);
     }
 
     public static final Parcelable.Creator<Question> CREATOR =

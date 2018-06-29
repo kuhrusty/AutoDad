@@ -3,13 +3,12 @@ package com.kuhrusty.autodad;
 import android.content.res.Resources;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.kuhrusty.autodad.data.Question;
 import com.kuhrusty.autodad.data.Sound;
 
 import java.util.ArrayList;
@@ -33,16 +32,11 @@ public class SoundBoardActivity extends ActionBarActivity
 
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
-        if (savedInstanceState != null) {
-//            //  Do we have a list of questions?
-//            ql = savedInstanceState.getParcelableArrayList(SAVED_QUESTIONS);
-        }
         if ((sounds == null) || (sounds.size() == 0)) {
             loadSounds();
         }
         setContentView(R.layout.activity_ask_prepared_question);
         View cv = findViewById(R.id.linear_question_layout);
-//Log.d("foo", "got cv " + cv);
         ViewGroup cvg = (cv instanceof ViewGroup) ? (ViewGroup)cv : null;
         for (Sound ts : sounds) {
             Button tb = new Button(this);
@@ -51,7 +45,6 @@ public class SoundBoardActivity extends ActionBarActivity
 //WILL CROAK IF CVG NULL
             cvg.addView(tb);
         }
-//        setContentView(R.layout.activity_sound_board);
     }
 
     @Override

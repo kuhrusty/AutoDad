@@ -11,10 +11,6 @@ public class Sound implements Parcelable {
 
     private int resourceID = UNKNOWN_RESOURCE_ID;
     private String name;
-//    private String questionMsg;
-//    private AnswerValue answer = AnswerValue.NO;
-//    //  null unless this is AnswerValue.CUSTOM
-//    private String answerMsg;
 
     public Sound() {
     }
@@ -44,48 +40,6 @@ public class Sound implements Parcelable {
     public void setName(String name) {
         this.name = name;
     }
-
-//    public String getQuestion() {
-//        return questionMsg;
-//    }
-//    public void setQuestion(String msg) {
-//        questionMsg = msg;
-//    }
-
-//    /**
-//     * @param val may be null, in which case NO will be used instead.
-//     */
-//    public void setAnswer(AnswerValue val) {
-//        answer = (val != null) ? val : AnswerValue.NO;
-//    }
-//
-//    /**
-//     * Returns NO, never null.
-//     */
-//    public AnswerValue getAnswer() {
-//        return answer;
-//    }
-
-//    /**
-//     * @param msg may be null.
-//     */
-//    public void setAnswerMessage(String msg) {
-//        answerMsg = msg;
-//    }
-//
-//    /**
-//     * May be null, even if getAnswer() is CUSTOM.
-//     */
-//    public String getAnswerMessage() {
-//        if (answerMsg != null) {
-//            return answerMsg;
-//        } else if (answer == AnswerValue.NO) {
-////            return R.string.
-//        }
-//return answer.name();
-////return null;
-////        return answer == AnswerValue.CUSTOM ? answerMsg : null;
-//    }
 
     //  Parcelable
     @Override

@@ -32,7 +32,6 @@ public class DisplayAnswerActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
-//        setContentView(R.layout.activity_display_answer);
 
         Resources res = getResources();
 
@@ -51,13 +50,6 @@ public class DisplayAnswerActivity extends ActionBarActivity {
             bgcolor = res.getColor(R.color.yellow);
         }
 
-//        if ((tq != null) && tq.getAnswer().equals(AnswerValue.YES))
-//        String ac = intent.getStringExtra(MainActivity.INTENT_ANSWER);
-//        String msg = intent.getStringExtra(MainActivity.INTENT_CUSTOM_ANSWER);
-//        if (msg == null) {
-//
-//        }
-
         // Create the text view
         TextView tv = new TextView(this);
         tv.setTextSize(120);
@@ -70,7 +62,6 @@ public class DisplayAnswerActivity extends ActionBarActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 finish();
                 return true;
-//                return false;
             }
         });
         // Set the text view as the activity layout
@@ -118,31 +109,5 @@ public class DisplayAnswerActivity extends ActionBarActivity {
         if (mediaPlayer != null) {
             mediaPlayer.start();
         }
-
-//        final AudioManager am = (AudioManager)(getApplicationContext().getSystemService(Context.AUDIO_SERVICE));
-//        AudioManager.OnAudioFocusChangeListener afChangeListener =
-//                new AudioManager.OnAudioFocusChangeListener() {
-//            public void onAudioFocusChange(int focusChange) {
-//                if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT) {
-//                    // Pause playback
-//                } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
-//                    // Resume playback
-//                } else if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
-////                    am.unregisterMediaButtonEventReceiver(RemoteControlReceiver);
-//                    am.abandonAudioFocus(this);
-//                    // Stop playback
-//                }
-//            }
-//        };
-//
-//        int afres = am.requestAudioFocus(afChangeListener,
-//                                 // Use the music stream.
-//                                 AudioManager.STREAM_MUSIC,
-//                                 // Request permanent focus.
-//                                 AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK);
-//        if (afres == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-////            am.registerMediaButtonEventReceiver(RemoteControlReceiver);
-//            // Start playback.
-//        }
     }
 }
