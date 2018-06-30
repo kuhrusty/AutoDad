@@ -24,10 +24,12 @@ In Android Studio 3.1.3:
      /home/.../AndroidStudioProjects)
    - Directory Name: (whatever you want; probably AutoDad)
 
-That should check the stuff out and start a Gradle build.  (I get a
-couple of errors about missing .iml files; I ignored them--I said to
-*not* remove the modules it was talking about--and things seem to build
-& run correctly.)
+   That should check the stuff out and start a Gradle build.  (If you
+   get errors about missing .iml files, ignore them--do *not* remove the
+   modules it's talking about.)
+
+3. Hit the "Sync Project with Gradle Files" button in the toolbar.  This
+   should generate the .iml files it was complaining about.
 
 ### TO BUILD & RUN IT
 
