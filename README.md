@@ -7,6 +7,11 @@ The target audience for this is my kids, so that they will always have
 easy access to the sort of guidance I would give even when I'm not there
 for them.
 
+### INTERESTING STUFF IN THE CODE
+
+- setting the default volume control stream
+- playing multiple sounds concurrently (`SoundBoardActivity.java`)
+
 ### TO CHECK OUT THE CODE
 
 In Android Studio 3.1.3:
