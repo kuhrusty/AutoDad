@@ -1,5 +1,6 @@
 *.iml
-.idea
+#  derp, shouldn't have added this at the same time I was removing .idea from git.
+#.idea
 .gradle
 local.properties
 .DS_Store
