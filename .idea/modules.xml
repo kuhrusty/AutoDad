@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AutoDad.iml" filepath="$PROJECT_DIR$/AutoDad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutoDadGH.iml" filepath="$PROJECT_DIR$/AutoDadGH.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
