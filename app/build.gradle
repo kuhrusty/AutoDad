@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 26
 
     defaultConfig {
         applicationId "com.kuhrusty.autodad"
-        minSdkVersion 11
-        targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 101
+        versionName "1.0.1"
     }
     buildTypes {
         release {
@@ -20,5 +20,5 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:21.0.3'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
 }

@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -19,7 +19,7 @@ import java.util.Random;
 /**
  * This displays the answer to an asked question.
  */
-public class DisplayAnswerActivity extends ActionBarActivity {
+public class DisplayAnswerActivity extends AppCompatActivity {
 
     public static final String INTENT_QUESTION = "com.kuhrusty.autodad.question";
     private static Random random = null;

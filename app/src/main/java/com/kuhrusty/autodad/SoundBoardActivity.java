@@ -4,7 +4,7 @@ import android.content.res.Resources;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -19,7 +19,7 @@ import java.util.Set;
 /**
  * A bunch of buttons which play sounds.
  */
-public class SoundBoardActivity extends ActionBarActivity
+public class SoundBoardActivity extends AppCompatActivity
         implements MediaPlayer.OnCompletionListener,
                    MediaPlayer.OnErrorListener {
 

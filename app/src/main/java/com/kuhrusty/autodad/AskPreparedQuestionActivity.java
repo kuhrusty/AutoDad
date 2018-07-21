@@ -3,7 +3,7 @@ package com.kuhrusty.autodad;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 /**
  * This displays the list of available questions.
  */
-public class AskPreparedQuestionActivity extends ActionBarActivity {
+public class AskPreparedQuestionActivity extends AppCompatActivity {
 
     public static final String SAVED_QUESTIONS = "com.kuhrusty.autodad.questions";
 
