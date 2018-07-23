@@ -42,3 +42,50 @@ Studio, not your real phone).  If your phone doesn't show up in that
 window, something is wrong.  Choose your phone (plugged in as a USB
 device, connected as a camera or a media device... probably camera) and
 wait for the "Ask AutoDad 1.0!" screen to show up.
+
+### TO MAKE IT YOUR OWN
+
+To make this something you can install on your own kids' devices for
+laughs, you probably want to do the following:
+
+#### 1. Record yourself saying "no" in various ways.
+
+I used my phone to record mine.  Once you have your recordings, and have
+trimmed them down to just the bits you want (I forget what tool I used
+for that), put them under `app/src/main/res/raw`.  (I named mine
+`no1.m4a`, `no2.m4a`, etc., but you can name them whatever you want, as
+long as you stick to lower case, numbers, and underscores.)
+
+#### 2. Replace the list of sounds.
+
+Unfortunately, the list of sounds is hard-coded in two places.  (Hey,
+I'm not saying this is *great* code!)  The first is in
+`DisplayAnswerActivity.java`, in `nextRand()`, where we're deciding
+which "no" to play.  (I only recorded one "yes"; that's chosen in
+`playSound()`.)
+
+The second is in `SoundBoardActivity.java`, in `loadSounds()`.  There,
+the name of each sound is read from `strings.xml` in
+`app/src/main/res/values`, so if one of your sounds is you saying, "Son,
+don't make me slap you," you might add this to `strings.xml`:
+
+    <string name="sound_name_slap">Son, don\'t make me slap you.</string>
+
+and then this in `loadSounds()`:
+
+    res.getString(R.string.sound_name_slap)
+
+#### 3. Replace the list of questions with your own.
+
+The list of questions is hard-coded in
+`AskPreparedQuestionActivity.java`, in `loadQuestions()`.
+
+(Normally, you don't want to hard-code English strings in your code; you
+want to put them in `strings.xml`, similar to the way
+`SoundBoardActivity.loadSounds()` was done.)
+
+#### 4. Replace the launch icon with a picture of yourself.
+
+Here's a video on this: https://www.youtube.com/watch?v=SDKwNh0TioE
+
+#### 5. Build and deploy on your kid's device!
