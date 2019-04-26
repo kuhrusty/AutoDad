@@ -1,7 +1,8 @@
 # AutoDad
 
 This was my first Android app.  It's pretty dumb; it was just a way for
-me to try out Android.
+me to try out Android.  It's also available as a free download in the
+Google Play store [here](https://play.google.com/store/apps/details?id=com.kuhrusty.autodad).
 
 The target audience for this is my kids, so that they will always have
 easy access to the sort of guidance I would give even when I'm not there
@@ -52,9 +53,10 @@ laughs, you probably want to do the following:
 
 I used my phone to record mine.  Once you have your recordings, and have
 trimmed them down to just the bits you want (I forget what tool I used
-for that), put them under `app/src/main/res/raw`.  (I named mine
-`no1.m4a`, `no2.m4a`, etc., but you can name them whatever you want, as
-long as you stick to lower case, numbers, and underscores.)
+for that--probably just the Android voice recorder), put them under
+`app/src/main/res/raw`.  (I named mine `no1.m4a`, `no2.m4a`, etc., but
+you can name them whatever you want, as long as you stick to lower case,
+numbers, and underscores.)
 
 #### 2. Replace the list of sounds.
 
